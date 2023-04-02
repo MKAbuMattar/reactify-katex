@@ -22,6 +22,7 @@ pnpm add reactify-katex
 ```tsx
 import React from 'react';
 import { BlockMath, InlineMath } from 'reactify-katex';
+import 'katex/dist/katex.min.css';
 
 const App = () => {
   return (
