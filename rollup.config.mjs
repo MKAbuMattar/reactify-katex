@@ -35,6 +35,6 @@ export default [
     input: 'lib/types/index.d.ts',
     external: ['@use-sptruz/katex', 'react'],
     plugins: [dts()],
-    output: [{ file: 'lib/index.d.ts', format: 'es' }],
+    output: [{file: 'lib/index.d.ts', format: 'es'}],
   },
 ];
