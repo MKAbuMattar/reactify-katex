@@ -1,11 +1,11 @@
-import type { InternalPathComponentProps, MathComponentProps } from '../types';
-import { CreateMathComponent } from './CreateMathComponent';
+import type {InternalPathComponentProps, MathComponentProps} from '../types';
+import {CreateMathComponent} from './create-math.component';
 
-const InternalInlineMath = ({ html }: InternalPathComponentProps) => {
+const InternalInlineMath = ({html}: InternalPathComponentProps) => {
   return (
     <span
       data-testid={'reactify-katex'}
-      dangerouslySetInnerHTML={{ __html: html }}
+      dangerouslySetInnerHTML={{__html: html}}
     />
   );
 };

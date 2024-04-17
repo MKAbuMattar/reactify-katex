@@ -1,6 +1,6 @@
 {
   "name": "reactify-katex",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "type": "module",
   "description": "A React component for typesetting mathematics using KaTeX",
   "keywords": [
@@ -40,6 +40,7 @@
   },
   "license": "MIT",
   "peerDependencies": {
+    "katex": "0.16.10",
     "react": ">=16.8.0",
     "react-dom": "*"
   },
@@ -48,30 +49,29 @@
       "optional": true
     }
   },
-  "dependencies": {
-    "@use-sptruz/katex": "0.0.1"
-  },
   "devDependencies": {
-    "@rollup/plugin-terser": "0.4.0",
-    "@rollup/plugin-typescript": "11.0.0",
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.32",
-    "@types/react-dom": "18.0.11",
-    "@typescript-eslint/eslint-plugin": "5.57.0",
-    "@typescript-eslint/parser": "5.57.0",
-    "eslint": "8.37.0",
-    "eslint-config-prettier": "8.8.0",
-    "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-simple-import-sort": "10.0.0",
-    "eslint-plugin-unused-imports": "2.0.0",
-    "prettier": "2.8.7",
+    "@rollup/plugin-terser": "0.4.4",
+    "@rollup/plugin-typescript": "11.1.6",
+    "@types/katex": "0.16.7",
+    "@types/node": "20.12.7",
+    "@types/react": "18.2.79",
+    "@types/react-dom": "18.2.25",
+    "@typescript-eslint/eslint-plugin": "7.7.0",
+    "@typescript-eslint/parser": "7.7.0",
+    "eslint": "9.0.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-simple-import-sort": "12.1.0",
+    "eslint-plugin-unused-imports": "3.1.0",
+    "katex": "0.16.10",
+    "prettier": "3.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "rollup": "3.20.2",
-    "rollup-plugin-dts": "5.3.0",
-    "tslib": "2.5.0",
-    "tsx": "3.12.6",
-    "typescript": "5.0.3"
+    "rollup": "4.14.3",
+    "rollup-plugin-dts": "6.1.0",
+    "tslib": "2.6.2",
+    "tsx": "4.7.2",
+    "typescript": "5.4.5"
   },
   "sideEffects": false,
   "exports": {

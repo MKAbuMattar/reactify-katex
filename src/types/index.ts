@@ -1,4 +1,17 @@
-import type { ComponentType, ReactElement } from 'react';
+import type {ComponentType, ReactElement} from 'react';
+
+export interface KatexOptions {
+  displayMode: boolean;
+  errorColor?: string;
+  throwOnError?: boolean;
+}
+
+export interface UseKaTeX {
+  formula: string;
+  errorColor?: string;
+  renderError?: (error: Error) => ReactElement;
+  displayMode: boolean;
+}
 
 export interface MathComponentProps {
   children?: string;

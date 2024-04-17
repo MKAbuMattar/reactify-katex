@@ -1,5 +1,5 @@
-import { useKaTeX } from '@use-sptruz/katex';
-import type { CreateMathComponentProps } from '../types';
+import {useKaTeX} from '../hooks/use-katex.hook';
+import type {CreateMathComponentProps} from '../types';
 
 export const CreateMathComponent = ({
   children,
@@ -10,7 +10,7 @@ export const CreateMathComponent = ({
   displayMode,
 }: CreateMathComponentProps) => {
   const formula = math ?? children ?? '';
-  const { html, error } = useKaTeX({
+  const {html, error} = useKaTeX({
     formula,
     displayMode,
     errorColor,
